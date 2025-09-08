@@ -1,12 +1,18 @@
-import React from 'react'
+"use client"
 
-const SubHeroSection = () => {
+import { TextScroll } from "../ui/text-scroll"
+
+function SubHeroSection() {
   return (
-    <div className='w-full border-y border-lightgrey text-lightgrey flex justify-around uppercase xl:text-4xl md:text-2xl sm:text-4xl py-8 items-center gap-4 bg-brown  '>
-        <p className=' md:block sm:hidden'>Fast Learner</p>
-        <p className='md:block sm:hidden'>Team Work</p>
-        <p>Details Master</p>
+    <div className="border-t border-b border-lightgrey w-full mt-5 sm:mt-20 ">
+      <TextScroll
+        text="Fast Learner || Team Work || Details Master ||"
+        default_velocity={3}
+        className="font-display bg-lightBrown tracking-tighter text-lightgrey mt-1 mb-1 md:text-7xl md:leading-[5rem]"
+        style={{ fontSize: "30px", padding:0,}} // ✅ Inline style
+      />
     </div>
   )
 }
+
 export default SubHeroSection

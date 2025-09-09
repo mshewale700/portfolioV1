@@ -1,7 +1,8 @@
 #root {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -39,4 +40,14 @@
 
 .read-the-docs {
   color: #888;
+}
+
+@media (min-width: 768px) {
+  #root {
+    padding: 2rem; /* bigger padding on tablets & desktops */
+  }
+}
+
+html, body {
+  overflow-x: hidden;
 }

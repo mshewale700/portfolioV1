@@ -41,7 +41,7 @@ const SingleProject = ({ name, year, align, Image, link }) => {
       </div>
 
       <div className="max-h-[300px] max-w-[400px] rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 relative border-white">
-      <div className="w-full h-full bg-cyan opacity-0 absolute top-0 left-0 hover:opacity-0 transition-all duration-500 md:block sm:hidden"></div>
+      <div className="w-full h-full bg-cyan opacity-0 absolute top-0 left-0 hover:opacity-0 transition-all duration-500 md:block sm:hidden "></div>
         <img src={Image} alt="Project Images"></img>
       </div>
     </motion.div>
